@@ -58,20 +58,26 @@ def build_rag():
 )
 
     prompt = ChatPromptTemplate.from_template(
-        """
-        Use only the context.
+    """
+You are an HR assistant for Zyro Dynamics.
 
-        If answer is not present say:
+Answer the question using the provided context.
 
-        I can only answer questions based on Zyro Dynamics HR policy documents.
+If the answer is found in the context, provide a clear and complete answer.
 
-        Context:
-        {context}
+Only if the context contains no relevant information for the question, respond exactly:
 
-        Question:
-        {question}
-        """
-    )
+I can only answer questions based on Zyro Dynamics HR policy documents.
+
+Context:
+{context}
+
+Question:
+{question}
+
+Answer:
+"""
+)
 
     def format_docs(docs):
         return "\n\n".join(
