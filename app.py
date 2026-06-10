@@ -13,6 +13,8 @@ from langchain_core.output_parsers import StrOutputParser
 st.title("🏢 Zyro Dynamics HR Assistant")
 
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+st.write("Key loaded:", bool(GROQ_API_KEY))
+st.write("Starts with:", GROQ_API_KEY[:4])
 
 @st.cache_resource
 def build_rag():
