@@ -45,5 +45,5 @@ Then open the Streamlit URL (typically `http://localhost:8501`) and ask HR-relat
 
 ## Notes
 
-- The app only indexes `.pdf` files in the `pdfs` directory.
+- The app only indexes `.pdf` files in the `pdfs/` directory.
 - If no relevant context is found, it returns a policy-limited fallback response.
