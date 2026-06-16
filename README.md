@@ -4,7 +4,7 @@ A Streamlit-based HR chatbot that answers employee questions using Zyro Dynamics
 
 ## What this project does
 
-- Loads HR policy documents from `/home/runner/work/zyro-hr-chatbot/zyro-hr-chatbot/pdfs`
+- Loads HR policy documents from `pdfs/`
 - Splits documents into chunks
 - Creates FAISS vector embeddings using `sentence-transformers/all-MiniLM-L6-v2`
 - Retrieves relevant context for each user question
@@ -12,9 +12,9 @@ A Streamlit-based HR chatbot that answers employee questions using Zyro Dynamics
 
 ## Repository structure
 
-- `/home/runner/work/zyro-hr-chatbot/zyro-hr-chatbot/app.py` – Streamlit app and RAG chain setup
-- `/home/runner/work/zyro-hr-chatbot/zyro-hr-chatbot/requirements.txt` – Python dependencies
-- `/home/runner/work/zyro-hr-chatbot/zyro-hr-chatbot/pdfs` – HR policy source documents
+- `app.py` – Streamlit app and RAG chain setup
+- `requirements.txt` – Python dependencies
+- `pdfs/` – HR policy source documents
 
 ## Requirements
 
